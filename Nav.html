@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>About Us</title>
   <style>
     body {
@@ -42,24 +47,67 @@
     p{
        font-size:medium;
     }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+}
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .desc {
+      padding: 15px;
+      text-align: center;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+}  
   </style>
 </head>
 <body>
   <nav class="navbar navbar-inverse" style="font-size: 20px">
     <div class="container-fluid">
-      <div class="navbar-header">
+      <!-- <div class="navbar-header">
         <a class="navbar-brand" href="#">User Interface Design</a>
-      </div>
+      </div> -->
       <ul class="nav navbar-nav">
-        <li ><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="active"><a href="#">About Us</a></li>
+        <li><a href="Status.html">Project Status</a></li>
       </ul>
     </div>
   </nav>
+
   <div class="container">
-    <div class="card">
+    <div class="card animate__animated animate__zoomIn dropdown">
       <h3 style="height: 70px;">Sumukh Mamatha Shivashankar</h3>
       <img src="Sumukh.png" style="width:200px; height: 270px;">
+      <div class="dropdown-content">
+        <h1>Access Sumukh's work</h1>
+        <!-- <img src="Sumukh.png" style="width:200px; height: 270px;"> -->
+        <div class="desc">
+          <a class="fa fa-github" style="font-size:36px;color:black" href="https://github.com/SumukhMamathaShivashankar" target="_blank"></a>
+        </div>
+      </div>
       <p>Areas of specialization:
         <ul>
           <li>Full Stack Development</li>
@@ -72,9 +120,17 @@
       </p>
     </div>
 
-    <div class="card">
+    <div class="card animate__animated animate__zoomIn dropdown">
       <h3 style="height: 70px;">Prithvi Vasanth Kumar</h3>
       <img src="Prithvi.png" style="width:200px; height: 270px;">
+      <div class="dropdown-content">
+        <h1>Access Prithvi's work</h1>
+        <!-- <img src="Prithvi.png" style="width:200px; height: 270px;"> -->
+        <div class="desc">
+          <!-- <h1>Click below to access Prithvi's work</h1> -->
+          <a class="fa fa-github" style="font-size:36px;color:black" href="https://github.com/PrithviVK" target="_blank" ></a>
+        </div>
+      </div>
       <p>Areas of specialization:
         <ul>
           <li>Web Development</li>
@@ -87,20 +143,31 @@
       </p>
     </div>
 
-    <div class="card">
+    <div class="card animate__animated animate__zoomIn dropdown">
       <h3 style="height: 70px;" >Ajay Kommineni</h3>
       <img src="ajay3.jpeg" style="width:200px; height: 270px;">
+      <div class="dropdown-content">
+        <h1>Access Ajay's work</h1>
+        <div class="desc">
+          <a class="fa fa-github" style="font-size:36px;color:black" href="https://github.com/ajaykommineni" target="_blank"></a>
+        </div>
+      </div>
       <p>Areas of specialization:
         <ul>
-          <li>Web Development</li>
-          <li>Python</li>
+          <li>Cyber security</li>
+          <li>Java</li>
           <li>Dart</li>
           <li>Cloud Computing</li>
+          <li>Python</li>
           <li>SQL</li>
-          <li>Java</li>
         </ul>
       </p>
     </div>
   </div>
 </body>
 </html>
+
+
+
+
+
